@@ -1,4 +1,24 @@
+/* HEADER */
+.icon{
+    height: 40px;
+    padding: 10px;
+}
 
+.carrinho {
+    height: 30px;
+    padding: 10px;
+}
+
+.cabecalho {
+    background-color: #FAA11C;
+    padding: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+/* ---------- */
 .tamanhoImgsAcompanhamentos{
     width : 120px;
     height : 120px;
