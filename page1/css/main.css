@@ -20,7 +20,10 @@
     position: fixed;
     width: 100%;
 }
+.espaco-header{
+    
 
+}
 /*-----------------------------------------------------*/
 /*---------------------Produtos------------------------*/
 .produtos {
@@ -38,6 +41,7 @@
     display: flex;
     padding: 0 0 20px 0;
     border-radius: 0 0 30px 30px;
+    padding-top: 65px;
 }
 #bem-vindo p{
     font-size: 17px;
@@ -67,13 +71,6 @@
 }
 
 /* ---------- */
-.tamanhoImgsAcompanhamentos{
-    width : 120px;
-    height : 120px;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-}
 
 .menu-container {
     border-top: 1px solid #000;
@@ -94,6 +91,58 @@
     transition: box-shadow 0.3s ease;
 }
 
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer h1 {
+    margin-top: 0;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer img {
+    width: 40px; 
+    height: 40px;
+    border-radius: 6px;
+    margin: 5px;
+}
+
+.conteudo-site {
+    display: inline-block;
+    text-align: left;
+    float: left;
+}
+
+.social-media {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.chama-zap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    text-align: right; 
+    vertical-align: top;
+    float: right; 
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.nome-rodape{
+    text-align: left;
+    padding-bottom: 20px;
+}
 
 .produto:hover {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 1);
@@ -150,4 +199,20 @@
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     padding-top: 40px;
+}
+
+.linha-branca {
+    border-top: 1px solid white;
+    width: 100%;
+}
+
+.copyright{
+    padding-top: 2px;
+}
+
+.whatsapp-icon {
+    width: 50px; 
+    height: 50px;
+    border-radius: 6px;
+    margin: 5px;
 }
