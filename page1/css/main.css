@@ -30,6 +30,51 @@
     margin: 10px;
 }
 
+/* Bem-Vindo */
+#bem-vindo{
+    background-image: linear-gradient(to right, rgb(0, 0, 0),rgb(25, 25, 25));
+    color: white;
+    height: 410px;
+    display: flex;
+    padding: 0 0 20px 0;
+    border-radius: 0 0 30px 30px;
+}
+#bem-vindo p{
+    font-size: 17px;
+    text-align: justify;
+    margin: 20px;
+}
+#bem-vindo h2{
+    font-size: 30px;
+}
+.texto-bv{
+    font-family: "Montserrat", sans-serif;
+    display: inline-block;
+    width: 1000px;
+    padding: 0 0 0 50px;
+    margin: auto 0;
+}
+#hamb-bemvindo{
+    width: 300px;
+    margin: 0 0 0 199px;
+}
+.direita{
+    float: right;
+}
+.orange{
+    color:#FAA11C;
+    font-weight: bold;
+}
+
+/* ---------- */
+.tamanhoImgsAcompanhamentos{
+    width : 120px;
+    height : 120px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .menu-container {
     border-top: 1px solid #000;
     padding-top: 20px;
