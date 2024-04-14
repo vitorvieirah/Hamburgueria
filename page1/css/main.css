@@ -116,3 +116,32 @@ button{
 }
 
 
+.principal{
+    display: block;
+       
+}
+
+.container {
+    background-color: rgba(217, 217, 217, 1);
+    display: block;
+    width: 500px;
+    height: 150px;
+
+}
+
+
+.carrinho-titulo {
+    position: absolute;
+    left: 0;
+    margin: 50px; }
+
+.linha {
+    position: absolute;
+    top: 135px; 
+    display: block;
+    margin-top: 25px;
+    margin-left: 50px;
+    width: 400px; 
+    border-top: 1px solid black; 
+}
+
