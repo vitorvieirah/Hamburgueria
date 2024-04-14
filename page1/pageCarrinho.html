@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">  
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <title>Hamburguria</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" />
+    <title>Hamburgueria</title>
 </head>
 <body>
-    
+
     <header class="cabecalho">
         <img class="icon" src="./Imgs/icon.png" alt="icone">
         <h1 class="titulo">Pixel Burguer</h1>
@@ -19,39 +22,54 @@
             <img class="carrinho" src="./Imgs/icon_home.png" alt="carrinho">
         </a>
     </header>
-    
-    <footer>
-        <h1 class="nome-rodape">Burger</h1>
-        <div class="conteudo-site"> 
-            <h3>Conteúdo</h3>
-            <ul>
-                <li>
-                    <p>Hamburger</p>
-                </li>
-                <li>
-                    <p>Bebidas</p>
-                </li>
-                <li>
-                    <p>Acompanhamentos</p>
-                </li>
-            </ul>
-        </div>
-    
-        <div class="social-media">
-            <h3>Social Media</h3>
-            <a href="#"><img src="./Imgs/facebook.png" alt="Facebook"></a>
-            <a href="#"><img src="./Imgs/X.jpg" alt="X"></a>
-            <a href="#"><img src="./Imgs/insta.jpg" alt="Instagram"></a>
-        </div>
-    
-        <div class="chama-zap">
-            <img class="whatsapp-icon" src="./Imgs/whats.png" alt="WhatsApp">
-            <p>Peça também pelo<br>nosso WhatsApp.</p>
+    <div class="espaco-header">
+        <div class="principal">
+            <h1 class="carrinho-titulo">Carrinho</h1>
+            <hr class="linha">
         </div>
         
-        <hr class="linha-branca">
-        <p class = "copyright">Copyright © 2024 Pixel Burguers. Todos direitos reservados.</p>
-    </footer>
+        <div>
+            <table class="centro tabela truculenta-100">
+                <thead>
+                    <tr>
+                      <th>Produto</th>
+                      <th>Quantidade</th>
+                      <th>Total</th>                
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+                    <tr class="linha-tabela">
+                        <td>
+                          <div class="product">
+                            <img class="imagem" src="./Imgs/hamburguer-removebg-preview.png" alt="" />
+                            <div class="info">
+                              <div class="name">Nome do produto</div>
+                              <div class="preco">R$22,00</div>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                            <div class="qty">
+                              <button class="btn-icone botao-qtd"><i class="material-icons-outlined">remove</i></button>
+                              <span>2</span>
+                              <button class="btn-icone"><i class="material-icons-outlined">add</i></button>
+                            </div>
+                        </td>
+                        <td>R$44,00</td>
+                        <td>
+                            <button class="btn-icone"><img class="del-tam" src="./Imgs/delete.png" alt=""></button>
+                        </td>
+                    </tr>    
+                </tbody>
+                <tfoot id="table-footer">
+               
+                </tfoot>
+            </table>
+        </div>
+
+    </div>
+    
+
     
 </body>
 </html>

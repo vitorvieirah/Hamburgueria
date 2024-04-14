@@ -21,7 +21,9 @@
     position: fixed;
     width: 100%;
 }
-
+.espaco-header{
+    padding-top: 65px;
+}
 /*-----------------------------------------------------*/
 /*---------------------Produtos------------------------*/
 .produtos {
@@ -196,6 +198,7 @@ footer img {
     padding-bottom: 20px;
 }
 
+
 .linha-branca {
     border-top: 1px solid white;
     width: 100%;
@@ -211,3 +214,115 @@ footer img {
     border-radius: 6px;
     margin: 5px;
 }
+
+.principal{
+    display: block;
+       
+}
+
+.container {
+    background-color: rgba(217, 217, 217, 1);
+    display: block;
+    width: 94.5%;
+    height: 160px;
+    margin-top: 150px;
+    margin-left: 50px;
+    margin-right: auto;
+}
+
+
+.carrinho-titulo {
+    position: relative;
+    left: 0;
+    margin: 50px; }
+
+.linha {
+    position: absolute;
+    top: 135px; 
+    display: block;
+    margin-top: 25px;
+    margin-left: 50px;
+    width: 94.5%; 
+    border-top: 1px solid black; 
+}
+
+.tabela, th, td{
+    border-collapse: collapse;
+    font-size: 22px;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: left;
+}
+
+.imagem{
+    width: fit-content;
+    height: 150px;
+    display: inline-block;    
+}
+
+.product {
+    display: flex;
+    align-items: center;
+  }
+  
+  .product img {
+    border-radius: 6px;
+  }
+  
+  .product .info {
+    margin-left: 20px;
+  }
+  
+  .product .info .name {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  
+  .product .info .preco {
+    color: #666;
+  }
+
+
+.btn-icone {
+    background-color: #ffffff;
+    padding: 5px; 
+    border: solid 2px #333333; 
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+.btn-icone:active {
+    background-color: #dddddd; 
+}
+
+
+.botao-qtd {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    font-size: 18px; 
+}
+
+.linha-tabela{
+    background-color: #D9D9D9;
+    
+}
+
+.truculenta-100 {
+    font-family: "Truculenta", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 36px;
+}
+
+.del-tam{
+    width: 20px;
+    
+}
+
+.centro {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
