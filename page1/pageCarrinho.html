@@ -17,7 +17,7 @@
     <header class="cabecalho">
         <img class="icon" src="./Imgs/icon.png" alt="icone">
         <h1 class="titulo">Pixel Burguer</h1>
-        <a href="index.html">
+        <a onclick="idaCarrinho()" href="index.html">
             <img class="carrinho" src="./Imgs/icon_home.png" alt="carrinho">
         </a>
     </header>
@@ -39,115 +39,6 @@
                     </tr>
                 </thead>
                 <tbody id="table-body">
-                    <tr class="linha-tabela">
-                        <td>
-                            <div class="product">
-                                <img class="imagem" src="./Imgs/hamburguer-removebg-preview.png"/>
-                                <div class="info">
-                                    <div class="name">Nome do produto</div>
-                                    <div class="preco">R$22,00</div>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="qty">
-                                <button class="quant btn-icone btn-left"><i class="material-icons-outlined">arrow_back_ios</i></button>
-                                <span class="quant text-bt">2</span>
-                                <button class="quant btn-icone btn-right"><i class="material-icons-outlined">arrow_forward_ios</i></button>
-                            </div>
-                        </td>
-                        <td>R$44,00</td>
-                        <td>
-                            <button class="btn-icone"><img class="del-tam" src="./Imgs/delete.png" alt=""></button>
-                        </td>
-                    </tr> 
-                    <tr class="linha-tabela">
-                        <td>
-                            <div class="product">
-                                <img class="imagem" src="./Imgs/hamburguer-removebg-preview.png"/>
-                                <div class="info">
-                                    <div class="name">Nome do produto</div>
-                                    <div class="preco">R$22,00</div>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="qty">
-                                <button class="quant btn-icone btn-left"><i class="material-icons-outlined">arrow_back_ios</i></button>
-                                <span class="quant text-bt">2</span>
-                                <button class="quant btn-icone btn-right"><i class="material-icons-outlined">arrow_forward_ios</i></button>
-                            </div>
-                        </td>
-                        <td>R$44,00</td>
-                        <td>
-                            <button class="btn-icone"><img class="del-tam" src="./Imgs/delete.png" alt=""></button>
-                        </td>
-                    </tr><tr class="linha-tabela">
-                        <td>
-                            <div class="product">
-                                <img class="imagem" src="./Imgs/hamburguer-removebg-preview.png"/>
-                                <div class="info">
-                                    <div class="name">Nome do produto</div>
-                                    <div class="preco">R$22,00</div>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="qty">
-                                <button class="quant btn-icone btn-left"><i class="material-icons-outlined">arrow_back_ios</i></button>
-                                <span class="quant text-bt">2</span>
-                                <button class="quant btn-icone btn-right"><i class="material-icons-outlined">arrow_forward_ios</i></button>
-                            </div>
-                        </td>
-                        <td>R$44,00</td>
-                        <td>
-                            <button class="btn-icone"><img class="del-tam" src="./Imgs/delete.png" alt=""></button>
-                        </td>
-                    </tr>
-                    <tr class="linha-tabela">
-                        <td>
-                            <div class="product">
-                                <img class="imagem" src="./Imgs/hamburguer-removebg-preview.png"/>
-                                <div class="info">
-                                    <div class="name">Nome do produto</div>
-                                    <div class="preco">R$22,00</div>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="qty">
-                                <button class="quant btn-icone btn-left"><i class="material-icons-outlined">arrow_back_ios</i></button>
-                                <span class="quant text-bt">2</span>
-                                <button class="quant btn-icone btn-right"><i class="material-icons-outlined">arrow_forward_ios</i></button>
-                            </div>
-                        </td>
-                        <td>R$44,00</td>
-                        <td>
-                            <button class="btn-icone"><img class="del-tam" src="./Imgs/delete.png" alt=""></button>
-                        </td>
-                    </tr>
-                    <tr class="linha-tabela">
-                        <td>
-                            <div class="product">
-                                <img class="imagem" src="./Imgs/hamburguer-removebg-preview.png"/>
-                                <div class="info">
-                                    <div class="name">Nome do produto</div>
-                                    <div class="preco">R$22,00</div>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="qty">
-                                <button class="quant btn-icone btn-left"><i class="material-icons-outlined">arrow_back_ios</i></button>
-                                <span class="quant text-bt">2</span>
-                                <button class="quant btn-icone btn-right"><i class="material-icons-outlined">arrow_forward_ios</i></button>
-                            </div>
-                        </td>
-                        <td>R$44,00</td>
-                        <td>
-                            <button class="btn-icone"><img class="del-tam" src="./Imgs/delete.png" alt=""></button>
-                        </td>
-                    </tr>
                 </tbody>
                 <tfoot id="table-foot">
                     <tr>
@@ -160,13 +51,14 @@
             </table>
         </div>
         <div id="finalizar-pedido">
-            <label id="total-pedido" for="btn-finalizar">Total: R$ 44,00</label>
-            <button id="btn-finalizar">Finalizar pedido</button>
+            <label id="total-pedido"></label>
+            <button type="button" id="btn-finalizar">Finalizar pedido</button>
         </div>
         
     </div>
     
 
-    
+    <script src="./js/scriptCarrinho.js"></script>
+    <script src="./js/carrinho.js"></script>
 </body>
 </html>
