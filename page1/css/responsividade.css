@@ -1,0 +1,151 @@
+/*-----------------------------------------------------*/
+/*-------------------------924px-----------------------*/
+
+@media screen and (max-width: 924px) {
+    .texto-bv{
+        width: 2000px;
+    }
+    #bem-vindo p{
+        font-size: 17px;
+        margin: 20px;
+    }
+}
+
+/*-----------------------------------------------------*/
+/*-------------------------768px-----------------------*/
+
+@media screen and (max-width: 768px) {
+    .icon {
+        height: 30px;
+        padding: 5px;
+    }
+    
+    .carrinho {
+        height: 25px;
+        padding: 5px;
+    }
+    
+    .titulo {
+        font-size: 20px;
+    }
+    
+    .produtos {
+        justify-content: space-around;
+    }
+    
+    .produto {
+        width: 30%;
+        margin: 20px 20px;
+    }
+
+    .titulo {
+        font-size: 20px;
+    }
+
+    #bem-vindo {
+        flex-direction: column-reverse;
+        height: auto;
+        padding: 0px;
+    }
+
+    #bem-vindo h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    #bem-vindo p {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    #bem-vindo .texto-bv {
+        padding: 0;
+        text-align: center;
+    }
+
+    #bem-vindo .conteudo-site {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    #bem-vindo .social-media, #bem-vindo .chama-zap {
+        margin-bottom: 20px;
+    }
+
+    #bem-vindo {
+        margin-top: 42px;
+        flex-direction: row;
+    }
+
+    #bem-vindo .texto-bv {
+        flex: 1;
+        padding-right: 20px;
+    }
+
+    #hamb-bemvindo{
+        width: fit-content;
+    }
+}
+
+/*-----------------------------------------------------*/
+/*-------------------------587px-----------------------*/
+@media screen and (max-width: 587px) {
+    #bem-vindo .texto-bv {
+        flex: 1;
+        padding-right: 0px;
+    }
+    #bem-vindo p{
+        margin: 0 5px 10px 20px;
+    }
+}
+
+/*-----------------------------------------------------*/
+/*-------------------------540px-----------------------*/
+@media screen and (max-width: 540px){
+    #hamb-bemvindo{
+        visibility: hidden;
+        width: 0px;
+    }
+
+    .tabela, th, td {
+        font-size: 16px; /* Diminui o tamanho da fonte da tabela */
+    }
+
+    .imagem {
+        height: 100px; /* Diminui a altura da imagem */
+    }
+
+    .product .info .name {
+        font-size: 18px; /* Diminui o tamanho do nome do produto */
+        margin-bottom: 10px; /* Reduz o espaçamento abaixo do nome do produto */
+    }
+
+    .product .info .preco {
+        font-size: 16px; /* Diminui o tamanho do preço */
+    }
+
+    .qty {
+        gap: 5px; /* Diminui o espaçamento entre os botões de quantidade */
+    }
+
+    .quant {
+        padding: 2px 5px; /* Diminui o padding dos botões de quantidade */
+        font-size: 14px; /* Diminui o tamanho da fonte dos botões de quantidade */
+    }
+
+    .del-tam {
+        width: 15px; /* Diminui o tamanho do ícone de exclusão */
+    }
+
+    #total-pedido {
+        font-size: 24px; /* Diminui o tamanho do texto do total do pedido */
+    }
+}
+
+/*-----------------------------------------------------*/
+/*-------------------------426px-----------------------*/
+@media screen and (max-width: 426px){
+    .produto{
+        margin: 10px 0 10px 0;
+    }
+}

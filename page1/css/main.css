@@ -131,7 +131,7 @@
 }
 #hamb-bemvindo{
     width: 300px;
-    margin: 0 0 0 199px;
+    margin: 0 0 0 20px;
 }
 .direita{
     float: right;
@@ -157,6 +157,7 @@ footer {
     color: white;
     padding: 20px;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 footer h1 {
@@ -178,6 +179,7 @@ footer img {
     display: block;
     text-align: left;
     float: left;
+    padding-left: 10px;
 }
 
 .social-media {
@@ -221,7 +223,9 @@ footer img {
     border-radius: 6px;
     margin: 5px;
 }
-
+.espaco-footer{
+    padding-top: 100px;
+}
 /*-----------------------------------------------------*/
 /*----------------------Carrinho-----------------------*/
 .principal{
@@ -245,13 +249,9 @@ footer img {
 }
 
 .linha {
-    position: absolute;
-    top: 135px; 
-    display: inline-block;
-    margin-top: 25px;
-    margin-left: 50px;
-    width: 94.5%; 
-    border-top: 1px solid black; 
+    margin-top: 0;
+    border-bottom: 1px solid #000;
+    padding-top: 10px;
 }
 
 .tabela, th, td{
