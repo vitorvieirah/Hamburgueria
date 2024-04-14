@@ -36,13 +36,34 @@ function calculaValorCarrinho(carrinho){
 
 function atualizarTabela(){
 
+    let tabelaCarrinho = document.getElementById('tabela-carrinho');
+    tabelaCarrinho.innerHTML = '';
+
     carrinho.forEach((i, indice) => {
         let itemCarrinho = document.getElementById('item-carrinho');
         
         itemCarrinho.innerHTML = `
         <td>
-        
-        `
+            <div class="product">
+                <img class="imagem" src="${i.imagem}"/>
+                <div class="info">
+                    <div class="name">${i.nomeItem}</div>
+                    <div class="preco">${i,valor}</div>
+                </div>
+            </div>
+        </td>
+        <td>
+            <div class="qty">
+                <button class="btn-icone botao-qtd" type="button" onclick="diminuirQuantidade(${indice})"><i class="material-icons-outlined">remove</i></button>
+                <span>2</span>
+                <button class="btn-icone" type="buttton" onclick="aumentarQuantidade(${indice})"><i class="material-icons-outlined">add</i></button>
+            </div>
+        </td>
+        <td>${i.valorTotal}</td>
+        <td>
+            <button class="btn-icone" type="button" onclick="excluirItem(${indice})"><img class="del-tam" src="./Imgs/delete.png" alt=""></button>
+        </td>
+        `;
     });
 }
 
