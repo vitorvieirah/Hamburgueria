@@ -20,6 +20,8 @@
     font-family: 'Montserrat', sans-serif;
     position: fixed;
     width: 100%;
+    z-index: 1000;
+    top: 0;
 }
 .espaco-header{
     padding-top: 65px;
@@ -92,8 +94,8 @@
 .produto h3 {
     margin-top: 0;
     font-size: 18px;
-    border-top: 1px solid #000; /* Adicione uma borda inferior ao título */
-    padding-top: 10px; /* Adicione um espaço entre o título e a linha */
+    border-top: 1px solid #000;
+    padding-top: 10px;
 }
 
 /*-----------------------------------------------------*/
@@ -168,7 +170,7 @@ footer img {
 }
 
 .conteudo-site {
-    display: inline-block;
+    display: block;
     text-align: left;
     float: left;
 }
@@ -215,9 +217,10 @@ footer img {
     margin: 5px;
 }
 
+/*-----------------------------------------------------*/
+/*----------------------Carrinho-----------------------*/
 .principal{
     display: block;
-       
 }
 
 .container {
@@ -230,16 +233,16 @@ footer img {
     margin-right: auto;
 }
 
-
 .carrinho-titulo {
     position: relative;
-    left: 0;
-    margin: 50px; }
+    margin: 50px; 
+    font-family: "Truculenta", sans-serif;
+}
 
 .linha {
     position: absolute;
     top: 135px; 
-    display: block;
+    display: inline-block;
     margin-top: 25px;
     margin-left: 50px;
     width: 94.5%; 
@@ -248,8 +251,7 @@ footer img {
 
 .tabela, th, td{
     border-collapse: collapse;
-    font-size: 22px;
-    border-collapse: collapse;
+    font-size: 20px;
     padding: 10px;
     text-align: left;
 }
@@ -274,38 +276,46 @@ footer img {
   }
   
   .product .info .name {
-    font-size: 25px;
-    margin-bottom: 20px;
+    font-size: 22px;
+    margin-bottom: 17px;
   }
   
   .product .info .preco {
-    color: #666;
-  }
-
-
-.btn-icone {
-    background-color: #ffffff;
-    padding: 5px; 
-    border: solid 2px #333333; 
-    cursor: pointer;
-    transition: background-color 0.3s;
+    color: #525252;
 }
 
-
-.btn-icone:active {
-    background-color: #dddddd; 
-}
-
-
-.botao-qtd {
-    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-    font-size: 18px; 
-}
-
-.linha-tabela{
-    background-color: #D9D9D9;
+.qty{
+    display: flex;
+    gap: 0;
     
 }
+
+.quant{
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #808080;
+    color: white;
+    padding: 3px 8px 3px 8px;
+}
+.text-bt{
+    padding-top: 6px;
+}
+
+.btn-delete{
+    background-color: #D9D9D9;
+}
+.btn-left {
+    border-radius: 10px 0 0 10px;
+}
+.btn-right {
+    border-radius: 0 10px 10px 0 ;
+}
+
+.btn-icone:hover {
+    cursor: pointer;
+    background-color: #797979;
+}
+
 
 .truculenta-100 {
     font-family: "Truculenta", sans-serif;
@@ -323,6 +333,53 @@ footer img {
 .centro {
     margin-left: auto;
     margin-right: auto;
-    width: 60%;
+    width: 70%;
 }
 
+.linha-tabela{
+    background-color: #ebebeb;
+}
+#table-foot{
+    background-image: linear-gradient(to top, #252525, #ebebeb);
+}
+#table-head{
+    background-color: #252525;
+    color: white;
+}
+
+.borda-left{
+    border-radius: 10px 0 0 0 ;
+}
+.borda-right{
+    border-radius: 0 10px 0 0 ;
+}
+.borda-left-foot{
+    border-radius: 0 0 0 10px ;
+}
+.borda-right-foot{
+    border-radius: 0 0 10px 0 ;
+}
+
+#finalizar-pedido{
+    display: flex;
+    margin: 15px;
+    font-family: "Truculenta", sans-serif;
+    float: right;
+}
+
+#btn-finalizar{
+    background-color: #FAA11C;
+    color: white;
+    padding: 10px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: large;
+}
+#btn-finalizar:hover{
+    cursor: pointer;
+}
+
+#total-pedido{
+    font-size: 30px;
+    margin: 4px 8px 0 0;
+}
