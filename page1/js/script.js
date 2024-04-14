@@ -31,8 +31,6 @@ function calculaValorCarrinho(carrinho){
 }
 
 function atualizarTabela(){
-    /*let itemCarrinho = document.getElementById('item-carrinho');
-    itemCarrinho.innerHTML = '';*/
 
     carrinho.forEach((i, indice) => {
         let itemCarrinho = document.getElementById('item-carrinho');
@@ -43,37 +41,6 @@ function atualizarTabela(){
         `
     });
 }
-
-/*function atualizaTabela() {
-
-    let tableBody = document.getElementById('table-body');
-    tableBody.innerHTML = '';
-
-
-    listaDeCompras.forEach((i, indice) => {
-        let tr = document.createElement('tr');
-
-
-        tr.innerHTML =
-            `<td>${i.item}</td>
-        <td>${i.valor}</td>
-        <td>
-            <button type="button" onclick="editarItem(${indice})" class="material-symbols-outlined btn-icone">edit
-            </button>
-        
-            <button type="button" onclick="excluirItem(${indice})" class="material-symbols-outlined btn-icone">remove
-            </button>
-        
-        </td>`;
-        tableBody.append(tr);
-
-        listaDeCompras.forEach((b, indiceB) => {
-            if (indice === indiceB) {
-                i = indiceB;
-            }
-        })
-    });
-}*/
 
 function aumentarQuantidade(indice){
     let item = carrinho[i];
