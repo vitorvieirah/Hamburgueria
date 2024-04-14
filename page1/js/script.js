@@ -4,9 +4,9 @@ let listaPedidos = [];
 let cont = 1;
 
 function addCarrinho (){
-    let nomeItem = document.getElementById('nomeItem').value;
-    let valor = document.getElementById('valorItem').value;
-    let img = document.getElementById('imagem').value;
+    let nomeItem = document.getElementById('nomeItem').innerHTML;
+    let valor = document.getElementById('valorItem').innerHTML;
+    let img = document.getElementById('imagem').src;
 
     valor = valor.replace(new RegExp("R$", 'g'), '');
 
@@ -16,7 +16,9 @@ function addCarrinho (){
 
     calculaValorCarrinho(carrinho);
 
-    atualizarTabela();
+    console.log(carrinho);
+
+    //atualizarTabela();
 }
 
 function finalizarCarrinho(){
@@ -28,7 +30,7 @@ function finalizarCarrinho(){
 }
 
 function calculaValorCarrinho(carrinho){
-    carrinho.foreach(i => {
+    carrinho.forEach(i => {
         valorTotalCarrinho = valorTotalCarrinho + carrinho[i].valorTotal;
     });
 }
