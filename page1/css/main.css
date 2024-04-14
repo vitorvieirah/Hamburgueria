@@ -79,6 +79,11 @@
 
 .produto button:hover {
     background-color: #FAA11C;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 1);
+}
+
+.produto button:active{
+    opacity: 0.5;
 }
 
 .fontepreco{
@@ -303,8 +308,7 @@ footer img {
 }
 
 .linha-tabela{
-    background-color: #D9D9D9;
-    
+    background-color: #D9D9D9;  
 }
 
 .truculenta-100 {

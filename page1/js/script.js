@@ -1,22 +1,24 @@
 let carrinho = [];
-let valorTotalCarrinho;
+let valorTotalCarrinho = 0;
 let listaPedidos = [];
 let cont = 1;
+let i = 0;
 
-function addCarrinho (){
-    let nomeItem = document.getElementById('nomeItem').innerHTML;
-    let valor = document.getElementById('valorItem').innerHTML;
-    let img = document.getElementById('imagem').src;
+function addCarrinho (nomeItem, valorItem, imagem){
 
-    valor = valor.replace(new RegExp("R$", 'g'), '');
+    /*carrinho = [];
+    valorTotalCarrinho = 0;*/
+
+    let valor = parseFloat(valorItem.replace(/R\$/g, '').replace(/,/g, '.'));
 
     carrinho.push(
-        {'nomeItem' : nomeItem, 'valor' : valor, 'quantidade' : 1, 'totalItem' : valor, 'imagem' : img}
+        {'nomeItem' : nomeItem, 'valor' : valor, 'quantidade' : 1, 'totalItem' : valor, 'imagem' : imagem}
     );
 
     calculaValorCarrinho(carrinho);
 
     console.log(carrinho);
+    console.log(valorTotalCarrinho);
 
     //atualizarTabela();
 }
@@ -30,9 +32,9 @@ function finalizarCarrinho(){
 }
 
 function calculaValorCarrinho(carrinho){
-    carrinho.forEach(i => {
-        valorTotalCarrinho = valorTotalCarrinho + carrinho[i].valorTotal;
-    });
+
+    valorTotalCarrinho = valorTotalCarrinho + carrinho[i].totalItem;
+    i ++;
 }
 
 
@@ -41,16 +43,16 @@ function atualizarTabela(){
     let tabelaCarrinho = document.getElementById('tabela-carrinho');
     tabelaCarrinho.innerHTML = '';
 
-    carrinho.forEach((i, indice) => {
+    carrinho.forEach((item, indice) => {
         let itemCarrinho = document.getElementById('item-carrinho');
         
         itemCarrinho.innerHTML = `
         <td>
             <div class="product">
-                <img class="imagem" src="${i.imagem}"/>
+                <img class="imagem" src="${item.imagem}"/>
                 <div class="info">
-                    <div class="name">${i.nomeItem}</div>
-                    <div class="preco">${i,valor}</div>
+                    <div class="name">${item.nomeItem}</div>
+                    <div class="preco">${item.valor}</div>
                 </div>
             </div>
         </td>
@@ -61,7 +63,7 @@ function atualizarTabela(){
                 <button class="btn-icone" type="buttton" onclick="aumentarQuantidade(${indice})"><i class="material-icons-outlined">add</i></button>
             </div>
         </td>
-        <td>${i.valorTotal}</td>
+        <td>${item.valorTotal}</td>
         <td>
             <button class="btn-icone" type="button" onclick="excluirItem(${indice})"><img class="del-tam" src="./Imgs/delete.png" alt=""></button>
         </td>
@@ -70,14 +72,14 @@ function atualizarTabela(){
 }
 
 function aumentarQuantidade(indice){
-    let item = carrinho[i];
+    let item = carrinho[indice];
     item.quantidade ++;
     item.valorTotal = item.quantidade * item.valor;
     calculaValorCarrinho(carrinho);
 }
 
 function diminuirQuantidade(indice){
-    let item = carrinho[i];
+    let item = carrinho[indice];
     item.quantidade --;
     item.valorTotal = item.quantidade * item.valor;
     calculaValorCarrinho(carrinho);
