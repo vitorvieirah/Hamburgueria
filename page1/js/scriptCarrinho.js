@@ -95,28 +95,33 @@ function excluirItem(indice) {
 }
 
 function criarPedido(){
-    let numero;
-    let pedidos = localStorage.getItem('pedidos');
-    let pedidosArray = pedidos ? JSON.parse(pedidos) : [];
 
-    numero = gerarNumerosNaoRepetidos();
+    if(valorTotalCarrinho > 0){
+        let numero;
+        let pedidos = localStorage.getItem('pedidos');
+        let pedidosArray = pedidos ? JSON.parse(pedidos) : [];
 
-    let dataAtual = new Date();
-    let data = dataAtual.getDate() + "/" + dataAtual.getMonth() + "/" + dataAtual.getFullYear();
+        numero = gerarNumerosNaoRepetidos();
 
-    pedidosArray.push({
-        'numero' : numero,
-        'data' : data,
-        'total' : valorTotalCarrinho
-    });
+        let dataAtual = new Date();
+        let data = dataAtual.getDate() + "/" + dataAtual.getMonth() + "/" + dataAtual.getFullYear();
 
-    carrinho = [];
-    carrinhoArray = [];
+        pedidosArray.push({
+            'numero' : numero,
+            'data' : data,
+            'total' : valorTotalCarrinho
+        });
 
-    localStorage.removeItem('carrinho');
-    localStorage.removeItem('carrinhoArray');
+        carrinho = [];
+        carrinhoArray = [];
 
-    localStorage.setItem('pedidos', JSON.stringify(pedidosArray));
+        localStorage.removeItem('carrinho');
+        localStorage.removeItem('carrinhoArray');
+
+        localStorage.setItem('pedidos', JSON.stringify(pedidosArray));
+    }else{
+        alert("Não é possível finalizar um carrinho vazio");
+    }
 }
 
 function gerarNumerosNaoRepetidos() {
