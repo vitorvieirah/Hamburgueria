@@ -8,6 +8,7 @@ function carregarCarrinho() {
     let carrinho = localStorage.getItem('carrinho');
     if (carrinho) {
         let carrinhoArray = JSON.parse(carrinho);
+        calculaValorCarrinho(carrinhoArray);
         atualizarTabela(carrinhoArray);
     }
 }
@@ -15,9 +16,10 @@ function carregarCarrinho() {
 function atualizarTabela(carrinhoArray) {
     let tabelaCarrinho = document.getElementById('table-body');
     tabelaCarrinho.innerHTML = '';
-
+    
     carrinhoArray.forEach((item, indice) => {
         let itemCarrinho = document.createElement('tr');
+        let valor = item.totalItem.toString().replace(/\./g, ',');
 
         itemCarrinho.innerHTML = `
         <td>
@@ -36,7 +38,7 @@ function atualizarTabela(carrinhoArray) {
                 <button type="button" onclick="aumentarQuantidade(${indice})" class="quant btn-icone btn-right"><i class="material-icons-outlined">arrow_forward_ios</i></button>
             </div>
         </td>
-        <td>R$${item.totalItem.toFixed(2)}</td>
+        <td>R$${valor}</td>
         <td>
             <button type="button" onclick="excluirItem(${indice})" class="btn-icone"><img class="del-tam" src="./Imgs/delete.png" alt=""></button>
         </td>
@@ -52,9 +54,8 @@ function atualizarPage(){
     let label = document.getElementById('total-pedido');
     label.innerHTML = '';
     label.innerHTML = `
-        Total: R$ ${valorTotalCarrinho.toString()}.00
+        Total: R$ ${valorTotalCarrinho.toString()},00
     `;
-    
 }
 
 function calculaValorCarrinho(carrinho){
