@@ -26,6 +26,7 @@ function validarProdutoIgual(nomeItem, carrinhoArray){
     carrinhoArray.forEach(produto => {
         if(nomeItem == produto.nomeItem){
             produto.quantidade++;
+            produto.totalItem = produto.valor * produto.quantidade;
             aumentou = true;
         }
     });
