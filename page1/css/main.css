@@ -345,7 +345,6 @@ footer img {
 
 .del-tam{
     width: 20px;
-    
 }
 
 .centro {
@@ -400,4 +399,12 @@ footer img {
 #total-pedido{
     font-size: 30px;
     margin: 4px 8px 0 0;
+}
+
+.meus-pedidos{
+    position: relative;
+    margin-left: 1800px;
+    color: #000;
+    font-family: "Truculenta", sans-serif;
+    font-size: 25px;
 }

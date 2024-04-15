@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" />
-    <title>Carrinho</title>
+    <title>Pedidos</title>
 </head>
 <body>
 <!--------------------------------CABEÇALHO---------------------------------------->
@@ -22,21 +22,19 @@
             <img class="carrinho" src="./Imgs/icon_home.png" alt="carrinho">
         </a>
     </header>
-
-<!--------------------------------TABELA-CARRINHO---------------------------------------->
+<!--------------------------------TABELA-CARRINHO---------------------------------------->   
     <div class="espaco-header">
         <div class="principal">
-            <h1 class="carrinho-titulo linha">Carrinho</h1>
+            <h1 class="carrinho-titulo linha">Pedidos</h1>
         </div>
         
         <div>
             <table class="centro tabela truculenta-100">
                 <thead id="table-head">
                     <tr>
-                        <th class="borda-left">Produto</th>
-                        <th>Quantidade</th>
+                        <th class="borda-left">N°</th>
+                        <th>Data</th>
                         <th>Total</th>
-                        <th class="borda-right"></th>
                     </tr>
                 </thead>
                 <tbody id="table-body">
@@ -46,7 +44,6 @@
                         <td class="borda-left-foot"></td>
                         <td></td>
                         <td></td>
-                        <td class="borda-right-foot"></td>
                     </tr>
                 </tfoot>
             </table>
@@ -54,11 +51,12 @@
         <div id="finalizar-pedido">
             <div id="pegaTotal">
                 <label id="total-pedido"></label>
-                <a href="pagePedidos.html"><button onclick="criarPedido()" type="button" id="btn-finalizar">Finalizar Carrinho</button></a>
+                <button onclick="limparPedidos()" type="button" id="btn-finalizar">Limpar Pedidos</button>
             </div>
         </div>
     </div>
     
-    <script src="./js/scriptCarrinho.js"></script>    
+    <script src="./js/scriptPedidos.js"></script>
+      
 </body>
 </html>

@@ -108,37 +108,37 @@
     }
 
     .tabela, th, td {
-        font-size: 16px; /* Diminui o tamanho da fonte da tabela */
+        font-size: 16px; 
     }
 
     .imagem {
-        height: 100px; /* Diminui a altura da imagem */
+        height: 100px; 
     }
 
     .product .info .name {
-        font-size: 18px; /* Diminui o tamanho do nome do produto */
-        margin-bottom: 10px; /* Reduz o espaçamento abaixo do nome do produto */
+        font-size: 18px; 
+        margin-bottom: 10px; 
     }
 
     .product .info .preco {
-        font-size: 16px; /* Diminui o tamanho do preço */
+        font-size: 16px; 
     }
 
     .qty {
-        gap: 5px; /* Diminui o espaçamento entre os botões de quantidade */
+        gap: 5px; 
     }
 
     .quant {
-        padding: 2px 5px; /* Diminui o padding dos botões de quantidade */
-        font-size: 14px; /* Diminui o tamanho da fonte dos botões de quantidade */
+        padding: 2px 5px; 
+        font-size: 14px; 
     }
 
     .del-tam {
-        width: 15px; /* Diminui o tamanho do ícone de exclusão */
+        width: 15px; 
     }
 
     #total-pedido {
-        font-size: 24px; /* Diminui o tamanho do texto do total do pedido */
+        font-size: 24px; 
     }
 }
 

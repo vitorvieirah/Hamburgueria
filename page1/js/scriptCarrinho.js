@@ -93,3 +93,46 @@ function excluirItem(indice) {
         localStorage.setItem('carrinho', JSON.stringify(carrinho));
     }
 }
+
+function criarPedido(){
+    let numero;
+    let pedidos = localStorage.getItem('pedidos');
+    let pedidosArray = pedidos ? JSON.parse(pedidos) : [];
+
+    numero = gerarNumerosNaoRepetidos();
+
+    let dataAtual = new Date();
+    let data = dataAtual.getDate() + "/" + dataAtual.getMonth() + "/" + dataAtual.getFullYear();
+
+    pedidosArray.push({
+        'numero' : numero,
+        'data' : data,
+        'total' : valorTotalCarrinho
+    });
+
+    carrinho = [];
+    carrinhoArray = [];
+
+    localStorage.removeItem('carrinho');
+    localStorage.removeItem('carrinhoArray');
+
+    localStorage.setItem('pedidos', JSON.stringify(pedidosArray));
+}
+
+function gerarNumerosNaoRepetidos() {
+    const min = 1;
+    const max = 1000;
+    const quantidade = 1;
+    let numeros = [];
+    for (let i = min; i <= max; i++) {
+        numeros.push(i);
+    }
+
+    let numerosEmbaralhados = [];
+    while (numeros.length) {
+        const indiceAleatorio = Math.floor(Math.random() * numeros.length);
+        numerosEmbaralhados.push(numeros.splice(indiceAleatorio, 1)[0]);
+    }
+
+    return numerosEmbaralhados.slice(0, quantidade);
+}
