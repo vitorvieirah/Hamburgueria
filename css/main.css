@@ -408,3 +408,7 @@ footer img {
     font-family: "Truculenta", sans-serif;
     font-size: 25px;
 }
+
+.none-link{
+    text-decoration: none;
+}

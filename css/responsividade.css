@@ -1,10 +1,73 @@
 /*-----------------------------------------------------*/
-/*-------------------------1440px-----------------------*/
+/*-------------------------2100px á 1500px-----------------------*/
+
+@media screen and (max-width: 2100px) {
+    .meus-pedidos{
+        position: relative;
+        margin-left: 1550px;
+        color: #000;
+        font-family: "Truculenta", sans-serif;
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 1800px) {
+    .meus-pedidos{
+        position: relative;
+        margin-left: 1300px;
+        color: #000;
+        font-family: "Truculenta", sans-serif;
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .meus-pedidos{
+        position: relative;
+        margin-left: 1100px;
+        color: #000;
+        font-family: "Truculenta", sans-serif;
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .meus-pedidos{
+        position: relative;
+        margin-left: 1000px;
+        color: #000;
+        font-family: "Truculenta", sans-serif;
+        font-size: 25px;
+    }
+}
+
+/*-----------------------------------------------------*/
+/*-------------------------1440px á 1024px-----------------------*/
 
 @media screen and (max-width: 1440px) {
     .meus-pedidos{
         position: relative;
         margin-left: 950px;
+        color: #000;
+        font-family: "Truculenta", sans-serif;
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 1255px) {
+    .meus-pedidos{
+        position: relative;
+        margin-left: 750px;
+        color: #000;
+        font-family: "Truculenta", sans-serif;
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    .meus-pedidos{
+        position: relative;
+        margin-left: 550px;
         color: #000;
         font-family: "Truculenta", sans-serif;
         font-size: 25px;
@@ -25,7 +88,7 @@
 }
 
 /*-----------------------------------------------------*/
-/*-------------------------924px-----------------------*/
+/*-------------------------924px á 768px-----------------------*/
 
 @media screen and (max-width: 924px) {
     .texto-bv{
@@ -44,8 +107,39 @@
     }
 }
 
+@media screen and (max-width: 855px) {
+    .meus-pedidos{
+        position: relative;
+        margin-left: 370px;
+        color: #000;
+        font-family: "Truculenta", sans-serif;
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .meus-pedidos{
+        position: relative;
+        margin-left: 320px;
+        color: #000;
+        font-family: "Truculenta", sans-serif;
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .meus-pedidos{
+        position: relative;
+        margin-left: 290px;
+        color: #000;
+        font-family: "Truculenta", sans-serif;
+        font-size: 25px;
+    }
+}
+
+
 /*-----------------------------------------------------*/
-/*-------------------------768px-----------------------*/
+/*-------------------------768px á 587px-----------------------*/
 
 @media screen and (max-width: 768px) {
     .icon {
@@ -127,6 +221,36 @@
     }
 }
 
+@media screen and (max-width: 740px) {
+    .meus-pedidos{
+        position: relative;
+        margin-left: 330px;
+        color: #000;
+        font-family: "Truculenta", sans-serif;
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .meus-pedidos{
+        position: relative;
+        margin-left: 290px;
+        color: #000;
+        font-family: "Truculenta", sans-serif;
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .meus-pedidos{
+        position: relative;
+        margin-left: 250px;
+        color: #000;
+        font-family: "Truculenta", sans-serif;
+        font-size: 25px;
+    }
+}
+
 /*-----------------------------------------------------*/
 /*-------------------------587px-----------------------*/
 @media screen and (max-width: 587px) {
@@ -147,7 +271,7 @@
 }
 
 /*-----------------------------------------------------*/
-/*-------------------------540px-----------------------*/
+/*-------------------------540px á 426px-----------------------*/
 @media screen and (max-width: 540px){
     #hamb-bemvindo{
         visibility: hidden;
