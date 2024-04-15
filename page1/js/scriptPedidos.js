@@ -21,7 +21,7 @@ function atualizarTabela(){
 }
 
 function limparPedidos(){
-    if (confirm(`Deseja realmente limpar a lista de pedidos ${carrinho[indice].nomeItem}?`)){
+    if (confirm(`Deseja realmente limpar a lista de pedidos ?`)){
         localStorage.removeItem('pedidos');
         atualizarTabela();
     }
