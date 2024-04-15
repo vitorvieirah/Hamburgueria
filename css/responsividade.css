@@ -1,4 +1,30 @@
 /*-----------------------------------------------------*/
+/*-------------------------1440px-----------------------*/
+
+@media screen and (max-width: 1440px) {
+    .meus-pedidos{
+        position: relative;
+        margin-left: 950px;
+        color: #000;
+        font-family: "Truculenta", sans-serif;
+        font-size: 25px;
+    }
+}
+
+/*-----------------------------------------------------*/
+/*-------------------------1024px-----------------------*/
+
+@media screen and (max-width: 1024px) {
+    .meus-pedidos{
+        position: relative;
+        margin-left: 550px;
+        color: #000;
+        font-family: "Truculenta", sans-serif;
+        font-size: 25px;
+    }
+}
+
+/*-----------------------------------------------------*/
 /*-------------------------924px-----------------------*/
 
 @media screen and (max-width: 924px) {
