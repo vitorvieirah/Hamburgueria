@@ -9,6 +9,13 @@
         font-size: 17px;
         margin: 20px;
     }
+    .meus-pedidos{
+        position: relative;
+        margin-left: 400px;
+        color: #000;
+        font-family: "Truculenta", sans-serif;
+        font-size: 25px;
+    }
 }
 
 /*-----------------------------------------------------*/
@@ -85,6 +92,13 @@
     #hamb-bemvindo{
         width: fit-content;
     }
+    .meus-pedidos{
+        position: relative;
+        margin-left: 400px;
+        color: #000;
+        font-family: "Truculenta", sans-serif;
+        font-size: 25px;
+    }
 }
 
 /*-----------------------------------------------------*/
@@ -96,6 +110,13 @@
     }
     #bem-vindo p{
         margin: 0 5px 10px 20px;
+    }
+    .meus-pedidos{
+        position: relative;
+        margin-left: 200px;
+        color: #000;
+        font-family: "Truculenta", sans-serif;
+        font-size: 25px;
     }
 }
 
@@ -140,6 +161,13 @@
     #total-pedido {
         font-size: 24px; 
     }
+    .meus-pedidos{
+        position: relative;
+        margin-left: 150px;
+        color: #000;
+        font-family: "Truculenta", sans-serif;
+        font-size: 25px;
+    }
 }
 
 /*-----------------------------------------------------*/
@@ -147,5 +175,12 @@
 @media screen and (max-width: 426px){
     .produto{
         margin: 10px 0 10px 0;
+    }
+    .meus-pedidos{
+        position: relative;
+        margin-left: 80px;
+        color: #000;
+        font-family: "Truculenta", sans-serif;
+        font-size: 25px;
     }
 }
